@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpportunityRadar — Discover Every Opportunity for CSE Students</title>
+  <meta name="description" content="OpportunityRadar helps undergraduate Computer Science students discover internships, fellowships, research programs, scholarships, hackathons, conferences, and trending research papers — all in one place." />
+  <meta name="keywords" content="CSE opportunities, internships, fellowships, GSoC, MITACS, research, scholarships, hackathons" />
+  <meta name="theme-color" content="#0a0a1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/layout.css" />
+</head>
+<body>
+  <!-- Animated gradient background -->
+  <div id="bg-mesh" aria-hidden="true">
+    <div class="bg-blob bg-blob--1"></div>
+    <div class="bg-blob bg-blob--2"></div>
+    <div class="bg-blob bg-blob--3"></div>
+  </div>
+
+  <!-- App shell -->
+  <div id="app">
+    <!-- Sidebar injected by main.js -->
+    <nav id="sidebar" class="sidebar" aria-label="Main navigation"></nav>
+    <!-- Main content area -->
+    <main id="content" class="content"></main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
